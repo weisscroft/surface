@@ -1,0 +1,918 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(../sources/fonts/OpenSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../sources/fonts/OpenSans-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+.header {
+  background-color: #0a0e34;
+  position: relative;
+  padding-bottom: 85px;
+  text-align: center;
+}
+
+.header::before {
+  content: "";
+  background-image: url(../sources/img/football_767.jpg);
+  background-color: #0a0e34;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.header-logo {
+  margin-top: 45px;
+  margin-bottom: 135px;
+  width: 133px;
+  height: 36px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.header-title {
+  color: #ffffff;
+  letter-spacing: 1.54px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 31px;
+  text-transform: uppercase;
+  align-self: start;
+  margin-left: 6.25vw;
+}
+
+.second {
+  width: 7.9em;
+  margin-right: 13vw;
+  margin-top: 30px;
+  align-self: flex-end;
+  text-align: end;
+  margin-left: 0;
+  letter-spacing: 1.4px;
+}
+
+.download-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 15px;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.download-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 35px;
+  border-radius: 17px;
+  background-color: #5e42b0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 8px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cont-link {
+  text-align: start;
+  width: 83px;
+}
+
+.google {
+  width: 60px;
+  padding-right: 15px;
+}
+
+.store {
+  font-weight: 700;
+}
+
+.download-link::before {
+  content: "";
+  background-image: url(../sources/svg/apple_logo_black.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.g::before {
+  content: "";
+  background-image: url(../sources/svg/google-play.svg);
+}
+
+.athlets,
+.players {
+  position: relative;
+}
+
+.athlets::before {
+  content: "";
+  background-image: url(../sources/img/footballer_192.png);
+  background-repeat: no-repeat;
+  width: 192px;
+  height: 281px;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+}
+
+.title-block {
+  align-self: flex-start;
+  color: #e7e7e7;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 245px;
+  margin-left: 20px;
+  line-height: 60px;
+}
+
+ol {
+  padding: 0;
+  list-style-type: none;
+  align-self: flex-start;
+  margin: 0;
+}
+
+.list {
+  display: block;
+
+  padding-bottom: 55px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+}
+
+.list:first-child {
+  padding-top: 85px;
+}
+
+.title_part {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.connect {
+  background-color: #fafafa;
+}
+
+.colab {
+  background-color: #f5f4f9;
+}
+
+.growth {
+  background-color: #5e42b0;
+}
+
+.number {
+  position: relative;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+.number::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+  position: absolute;
+}
+
+.title-item {
+  color: #c1c1c1;
+  letter-spacing: 1.15px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 34.49px;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+
+.list-desc {
+  color: #000000;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.growth .number::after {
+  background-color: #fff;
+}
+
+.growth .list-desc {
+  color: #fff;
+}
+
+.players::before {
+  content: "";
+  background-image: url(../sources/img/basketballer_302.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 302px;
+  height: 248px;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+}
+
+.players .growth {
+  background-color: #090c35;
+}
+
+.players .growth .number {
+  color: #8765dd;
+}
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.conthead {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+picture {
+  background-color: #9b8ec1;
+}
+
+.pic {
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #5e42b0;
+  left: 20px;
+  top: calc(100% - 58px);
+}
+
+.square .number {
+  margin: 0;
+  color: #fff;
+}
+
+.square .number::after {
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+article {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.title-cont {
+  color: #e7e7e7;
+  letter-spacing: 1.4px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 21px;
+  margin-top: 35px;
+}
+
+.desc-cont {
+  color: #000000;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+footer.header {
+  padding-bottom: 0;
+}
+
+footer.header::before {
+  background-image: url(../sources/img/game_767.jpg);
+}
+
+.footer-head {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding-top: 100px;
+}
+
+.back-logo {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 72px;
+  height: 74px;
+  background: linear-gradient(to bottom, #7c58de, #493a8d);
+  border-radius: 20px;
+}
+
+.footer-logo {
+  width: 88%;
+  height: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.title-footer {
+  color: #ffffff;
+  letter-spacing: 1.6px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 23px;
+  padding-top: 60px;
+}
+
+.footer-p {
+  color: #9b8ec1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 75px;
+  letter-spacing: 0.7px;
+}
+
+footer .download-list {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+footer .header-logo {
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  body {
+    min-width: 768px;
+  }
+
+  .header {
+    padding-bottom: 90px;
+  }
+
+  .header::before {
+    background-image: url(../sources/img/football_1280.jpg);
+  }
+
+  .header-logo {
+    margin-top: 40px;
+    margin-bottom: 180px;
+    width: 250px;
+    height: 56px;
+  }
+
+  .header-title {
+    font-size: 64px;
+    line-height: 60px;
+    letter-spacing: 3.52px;
+  }
+  .second {
+    margin-top: 30px;
+    text-align: start;
+    letter-spacing: 3.2px;
+  }
+
+  .download-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 312px;
+  }
+
+  .item {
+    margin-bottom: 0;
+  }
+
+  .download-link {
+    width: 311px;
+    height: 77px;
+    border-radius: 35px;
+    box-shadow: 8px 14px 24px #0a0e34;
+    font-size: 14px;
+  }
+
+  .cont-link {
+    text-align: start;
+    width: 142px;
+  }
+
+  .google {
+    width: 105px;
+    padding-right: 0;
+  }
+
+  .download-link::before {
+    width: 36px;
+    height: 42px;
+    margin-right: 28px;
+  }
+
+  .g::before {
+    width: 41px;
+    height: 45px;
+  }
+
+  .athlets,
+  .players {
+    overflow: hidden;
+  }
+
+  .athlets::before {
+    background-image: url(../sources/img/footballer_497.png);
+    left: -165px;
+    width: 497px;
+    height: 699px;
+    align-self: flex-start;
+  }
+
+  .title-block {
+    align-self: flex-end;
+    font-size: 80px;
+    margin-top: 85px;
+    margin-bottom: 60px;
+    margin-left: 0;
+    margin-right: 135px;
+  }
+
+  .list {
+    padding-bottom: 55px;
+    padding-left: 290px;
+    padding-right: 45px;
+    padding-top: 45px;
+  }
+
+  .list:first-child {
+    padding-top: 0;
+  }
+
+  .connect {
+    background-color: #fff;
+  }
+
+  .number {
+    margin-right: 12px;
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .number::after {
+    height: 5px;
+  }
+
+  .title-item {
+    font-size: 32px;
+    padding-bottom: 30px;
+    letter-spacing: 1.6px;
+  }
+
+  .list-desc {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .players::before {
+    content: "";
+    background-image: url(../sources/img/basketballer_436.png);
+    top: 40px;
+    width: 436px;
+    height: 565px;
+    align-self: flex-end;
+  }
+
+  .players .title-block {
+    align-self: flex-start;
+    padding-left: 34px;
+  }
+
+  .players .list {
+    padding-left: 32px;
+    padding-right: 355px;
+  }
+
+  .square {
+    width: 116px;
+    height: 116px;
+    left: 33px;
+    top: calc(100% - 80px);
+  }
+
+  .square .number {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  article {
+    margin-left: 35px;
+    margin-right: 80px;
+  }
+
+  .title-cont {
+    font-size: 80px;
+    line-height: 62px;
+    margin-top: 80px;
+  }
+
+  .desc-cont {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 35px;
+    margin-bottom: 110px;
+  }
+
+  footer.header::before {
+    background-image: url(../sources/img/game_1280.jpg);
+  }
+
+  .footer-head {
+    padding-top: 125px;
+  }
+
+  .back-logo {
+    width: 130px;
+    height: 137px;
+    background: linear-gradient(to bottom, #7c58de, #493a8d);
+    border-radius: 25px;
+  }
+
+  .title-footer {
+    font-size: 80px;
+    line-height: 65px;
+    padding-top: 85px;
+    letter-spacing: 4.85px;
+  }
+
+  .footer-p {
+    color: #a496ca;
+    font-size: 36px;
+    line-height: 26px;
+    margin-top: 27px;
+    margin-bottom: 285px;
+  }
+
+  footer .download-list {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  footer .header-logo {
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 961px) {
+  body {
+    min-width: 1920px;
+  }
+
+  .header {
+    padding-bottom: 110px;
+  }
+
+  .header::before {
+    background-image: url(../sources/img/football_1920.jpg);
+  }
+
+  .header-logo {
+    margin-top: 45px;
+    margin-bottom: 295px;
+    width: 191px;
+    height: 52px;
+  }
+
+  .header-title {
+    font-size: 90px;
+    line-height: 75px;
+  }
+
+  .second {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .download-list {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 222px;
+    width: 672px;
+  }
+
+  .item {
+    margin: 0;
+  }
+
+  .item:last-child {
+    margin-bottom: 0;
+    margin-left: 50px;
+  }
+
+  .download-link {
+    width: 311px;
+    height: 77px;
+    border-radius: 40px;
+    font-size: 14px;
+  }
+
+  .cont-link {
+    width: 146px;
+  }
+
+  .google {
+    width: 104px;
+    padding-right: 0;
+  }
+
+  .download-link::before {
+    width: 42px;
+    height: 48px;
+    margin-right: 25px;
+  }
+
+  .g::before {
+    width: 40px;
+    height: 50px;
+  }
+
+  .athlets::before {
+    background-image: url(../sources/img/footballer_566.png);
+    width: 566px;
+    height: 908px;
+    align-self: flex-start;
+    left: 20vw;
+    top: 27px;
+  }
+
+  .title-block {
+    align-self: flex-end;
+    font-size: 80px;
+    margin-top: 115px;
+    margin-bottom: 108px;
+    margin-left: 0;
+    margin-right: 26vw;
+  }
+
+  ol {
+    width: 100%;
+  }
+
+  .list {
+    padding-bottom: 55px;
+    padding-left: 53%;
+    padding-right: 11%;
+    padding-top: 60px;
+  }
+
+  .list:first-child {
+    padding-top: 0;
+  }
+
+  .connect {
+    background-color: #fff;
+  }
+
+  .number {
+    margin-right: 12px;
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .number::after {
+    height: 5px;
+  }
+
+  .title-item {
+    font-size: 36px;
+    padding-bottom: 30px;
+    letter-spacing: 1.8px;
+  }
+
+  .list-desc {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .players::before {
+    background-image: url(../sources/img/basketballer_991.png);
+    top: 23px;
+    width: 991px;
+    height: 815px;
+    align-self: flex-end;
+    right: 125px;
+  }
+
+  .players .title-block {
+    align-self: flex-start;
+    padding-left: 190px;
+  }
+
+  .players .list {
+    padding-left: 10%;
+    padding-right: 45%;
+  }
+
+  .cont {
+    position: relative;
+  }
+
+  .cont:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .conthead {
+    width: 50%;
+    position: static;
+  }
+
+  .square {
+    position: absolute;
+    width: 168px;
+    height: 155px;
+    background-color: #5e42b0;
+    left: calc(50% - 84px);
+    top: calc(50% - 77px);
+  }
+
+  .square .number {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .square .number {
+    margin: 0;
+    color: #fff;
+  }
+
+  .square .number::after {
+    background-color: #ffffff;
+    opacity: 0.3;
+  }
+
+  picture {
+    width: 100%;
+  }
+
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .title-cont {
+    color: #e7e7e7;
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin-top: 260px;
+    margin-left: 128px;
+  }
+
+  .desc-cont {
+    color: #000000;
+    padding-left: 130px;
+    padding-right: 130px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+    margin-top: 115px;
+    margin-bottom: 240px;
+  }
+
+  footer.header::before {
+    background-image: url(../sources/img/game_1920.jpg);
+  }
+
+  .footer-head {
+    flex-direction: row;
+    padding-top: 230px;
+  }
+
+  .back-logo {
+    margin: 0;
+    width: 130px;
+    height: 137px;
+  }
+
+  .footer-logo {
+    width: 88%;
+    height: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .headtitle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 37px;
+    margin-top: 20px;
+  }
+
+  .title-footer {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    letter-spacing: 4.41px;
+    padding-top: 0;
+  }
+
+  .footer-p {
+    text-align: left;
+    color: #9b8ec1;
+    font-size: 30px;
+    line-height: 34.49px;
+    margin-top: 20px;
+    margin-bottom: 163px;
+  }
+
+  footer .header-logo {
+    margin-top: 260px;
+    margin-bottom: 50px;
+  }
+}
