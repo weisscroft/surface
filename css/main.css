@@ -53,6 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 h1,
@@ -72,6 +73,7 @@ p {
   text-transform: uppercase;
   align-self: start;
   margin-left: 6.25vw;
+ overflow-wrap: break-word;
 }
 
 .second {
@@ -166,7 +168,6 @@ p {
 }
 
 .title-block {
-  align-self: flex-start;
   color: #e7e7e7;
   font-size: 50px;
   font-weight: 700;
@@ -300,6 +301,7 @@ picture {
   min-width: 320px;
   width: 100%;
   height: 100%;
+    
 }
 
 .square {
@@ -487,6 +489,7 @@ footer .header-logo {
 
   .athlets,
   .players {
+      
     overflow: hidden;
   }
 
@@ -499,12 +502,11 @@ footer .header-logo {
   }
 
   .title-block {
-    align-self: flex-end;
+    align-self: flex-start;
     font-size: 80px;
     margin-top: 85px;
     margin-bottom: 60px;
-    margin-left: 0;
-    margin-right: 135px;
+    margin-left: 290px;
   }
 
   .list {
@@ -550,11 +552,13 @@ footer .header-logo {
     width: 436px;
     height: 565px;
     align-self: flex-end;
+      left: 50%;
   }
 
   .players .title-block {
     align-self: flex-start;
     padding-left: 34px;
+      margin-left: 0;
   }
 
   .players .list {
@@ -657,7 +661,6 @@ footer .header-logo {
   }
 
   .second {
-    width: 100%;
     margin-top: 25px;
   }
 
@@ -705,23 +708,28 @@ footer .header-logo {
     width: 40px;
     height: 50px;
   }
+    
+  .players {
+    overflow: hidden;
+  }
+
 
   .athlets::before {
     background-image: url(../sources/img/footballer_566.png);
     width: 566px;
     height: 908px;
     align-self: flex-start;
-    left: 20vw;
     top: 27px;
+      right: 50%;
   }
 
   .title-block {
-    align-self: flex-end;
     font-size: 80px;
+    display: flex;
+    align-self: flex-start;
     margin-top: 115px;
     margin-bottom: 108px;
-    margin-left: 0;
-    margin-right: 26vw;
+    margin-left: 53%;
   }
 
   ol {
@@ -766,16 +774,17 @@ footer .header-logo {
 
   .players::before {
     background-image: url(../sources/img/basketballer_991.png);
-    top: 23px;
+      top: 23px;
     width: 991px;
     height: 815px;
     align-self: flex-end;
-    right: 125px;
+      left: 40%;
+      right: 6%;
   }
 
   .players .title-block {
     align-self: flex-start;
-    padding-left: 190px;
+    margin-left: 10%;
   }
 
   .players .list {
@@ -822,7 +831,12 @@ footer .header-logo {
 
   picture {
     width: 100%;
+      
   }
+    
+    .pic {
+        object-fit: cover;
+    }
 
   article {
     display: flex;
